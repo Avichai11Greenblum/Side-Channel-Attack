@@ -1,5 +1,5 @@
 import time
-real_password = "7548"
+real_password = '0546'
 
 def check_password(password): # Don't change it
     if len(password) != len(real_password):
@@ -53,8 +53,8 @@ def crack_password():
             
             
     return numero
-
-start = time.time()
+start_time=time.time() 
 print(crack_password())
-end = time.time()
-print(end - start)
+elapsed_time=time.time()-start_time
+print(elapsed_time)
+    
